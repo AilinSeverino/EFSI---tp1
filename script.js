@@ -101,6 +101,7 @@ console.log(descripcionUsuario(usuario));
 //ejercicio 9
 function activarUsuario(usuario){
     usuario.activo = true;
+    return true;
 }
 
 console.log(activarUsuario(usuario));
@@ -169,14 +170,14 @@ console.log(producto2);
 //ejercicio 16
 function buscarProducto(productos, nombre){
     for(let i = 0; i < productos.length; i++){
-        if(productos[i].nombre === nombre){
+        if(productos[i].nombre == nombre){
             return productos[i];
         }
     }
     return null;
 }
 
-console.log(buscarProducto(productos, "iphone"));
+console.log(buscarProducto(productos, "Mouse"));
 
 //ejercicio 17
 function DevolverPrecioMayor(productos){
